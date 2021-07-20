@@ -13,9 +13,6 @@ form.addEventListener("submit", (e) => {
   );
   let empty = document.createTextNode("You need to fill email and message!");
 
-  //error will be handled later
-  let error = document.createTextNode("You could not be sent try again later!");
-
   if (
     email.value === null ||
     (email.value === "" && message.value === null) ||
