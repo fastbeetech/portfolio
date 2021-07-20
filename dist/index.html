@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Abiola Fasanya Portfolio</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      body {
+        font-family: 'Poppins', sans-serif;
+       }
+    </style>
+</head>
+<body class="bg-gray-800 antialiased">
+    <header id="home" class="md:hidden sm:hidden hidden lg:block">
+        <nav class="text-gray-200 flex border-b-2 px-20 py-3 justify-between items-center border-gray-700">
+            <div class="flex items-center">
+                <div class="h-auto w-auto rounded-full border-green-600 text-gray-200 p-2 border">
+                    <span class="text-green-500 text-xl hover:text-gray-500">A</span>
+                    <span class="text-gray-400 text-xl hover:text-green-500">F</span>
+                </div>
+            </div>
+
+            <div class="flex items-center">
+                <div class="mx-3 text-sm">
+                    <a href="" class="homeD nav-link">Home</a>
+                    <a href="#about" class="aboutD nav-link">About</a>
+                    <a href="#skills" class="skillsD nav-link">skills</a>
+                    <a href="#project" class="projectD nav-link">Projects</a>
+                    <a href="#contact" class="contactD nav-link">Contact</a>
+                </div>
+                <div class="btn-hire text-green-900">Hire Me</div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile header -->
+    <header id="home" class="md:block block sm:block lg:hidden w-full">
+        <nav class="text-gray-200 border-b-2 px-5 py-3 border-gray-700">
+            <div class="flex items-center justify-between p-3">
+                <div class="h-auto w-auto hover:animate-none delay-700 animate-pulse rounded-full border-green-600 text-gray-200 p-2 border">
+                    <span class="text-green-500 text-xl hover:text-gray-500">A</span>
+                    <span class="text-gray-400 text-xl hover:text-green-500">F</span>
+                </div>
+                <div id="icon">
+                    <svg class="fill-current bg-green-500 hover:bg-green-400 rounded w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="text-gray-800" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                </div>
+            </div>
+
+            <div id="menuList" class="hidden flex flex-col w-full rounded bg-gray-700 p-3">
+                <div class="mx-5 transition delay-300 ease-in-out duration-700 text-sm flex flex-col text-xl space-y-10 capitalize items-center">
+                    <a href="" class="nav-link hover:text-green-400">Home</a>
+                    <a href="#about" class="about nav-link hover:text-green-400">About</a>
+                    <a href="#skills" class="skills nav-link hover:text-green-400">skills</a>
+                    <a href="#project" class="project nav-link hover:text-green-400">Projects</a>
+                    <a href="#project" class="contactM nav-link hover:text-green-400">Contact</a>
+                    <button class="btn-hire hover:animate-none focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50 mt-3 text-green-900">Hire Me</button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+<!-- Destop main -->
+    <main id="homeDesktop" class="hidden sm:hidden md:hidden lg:block pt-28 w-full h-full">
+        <div id="details" class="sm:block lg:flex justify-between items-center lg:px-20 sm:px-14">
+            <div class="flex space-x-7">
+                <div sm:hidden>
+                    <svg width="26" height="387" viewBox="0 0 26 387" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-current text-gray-500 hover:text-green-300"   d="M19.6172 85.5L20.5948 81.1566H14.4823V78.338C14.4823 77.1497 15.3361 75.9914 18.0738 75.9914H20.8526V72.2934C20.8526 72.2934 18.3309 72 15.9198 72C10.8859 72 7.59557 74.0803 7.59557 77.8463V81.1566H2V85.5H7.59557V96H14.4823V85.5H19.6172Z" fill="#e5e7eb"/>
+                        <path class="fill-current text-gray-500 hover:text-green-300" d="M19.7386 4.85784C19.7525 5.07103 19.7525 5.28427 19.7525 5.49745C19.7525 12 15.2157 19.4924 6.92386 19.4924C4.36928 19.4924 1.9962 18.6852 0 17.2843C0.362957 17.3299 0.711906 17.3452 1.08883 17.3452C3.19666 17.3452 5.13704 16.5685 6.68654 15.2437C4.7043 15.198 3.04313 13.7817 2.47079 11.8325C2.75 11.8781 3.02917 11.9086 3.32234 11.9086C3.72715 11.9086 4.132 11.8477 4.50888 11.7411C2.4429 11.2842 0.893363 9.30455 0.893363 6.91369V6.8528C1.49359 7.21828 2.19162 7.4467 2.93141 7.47713C1.71695 6.59386 0.921293 5.08627 0.921293 3.38067C0.921293 2.46698 1.1446 1.62942 1.53549 0.898453C3.75504 3.88322 7.09135 5.83242 10.8324 6.04566C10.7626 5.68017 10.7207 5.2995 10.7207 4.91878C10.7207 2.20809 12.7309 0 15.2296 0C16.5278 0 17.7004 0.593906 18.524 1.5533C19.543 1.34011 20.5202 0.928922 21.3857 0.365484C21.0506 1.50764 20.3387 2.46703 19.4035 3.07613C20.3109 2.96958 21.1903 2.69541 21.9999 2.31473C21.3858 3.28931 20.618 4.1573 19.7386 4.85784Z" fill="#e5e7eb"/>
+                        <path class="fill-current text-gray-500 hover:text-green-300" d="M13.0086 150.118C9.88537 150.118 7.36618 152.522 7.36618 155.504C7.36618 158.485 9.88537 160.889 13.0086 160.889C16.1318 160.889 18.651 158.485 18.651 155.504C18.651 152.522 16.1318 150.118 13.0086 150.118ZM13.0086 159.005C10.9903 159.005 9.34028 157.435 9.34028 155.504C9.34028 153.572 10.9854 152.002 13.0086 152.002C15.0318 152.002 16.6769 153.572 16.6769 155.504C16.6769 157.435 15.0269 159.005 13.0086 159.005ZM20.1979 149.897C20.1979 150.596 19.6086 151.154 18.8818 151.154C18.1501 151.154 17.5657 150.591 17.5657 149.897C17.5657 149.204 18.155 148.641 18.8818 148.641C19.6086 148.641 20.1979 149.204 20.1979 149.897ZM23.9349 151.172C23.8514 149.489 23.4488 147.999 22.1572 146.771C20.8706 145.543 19.309 145.158 17.5461 145.074C15.7291 144.975 10.2831 144.975 8.46618 145.074C6.70814 145.154 5.14654 145.538 3.85502 146.766C2.5635 147.994 2.16574 149.485 2.07734 151.168C1.97422 152.902 1.97422 158.1 2.07734 159.835C2.16083 161.518 2.5635 163.008 3.85502 164.236C5.14654 165.464 6.70323 165.849 8.46618 165.933C10.2831 166.032 15.7291 166.032 17.5461 165.933C19.309 165.854 20.8706 165.469 22.1572 164.236C23.4438 163.008 23.8465 161.518 23.9349 159.835C24.038 158.1 24.038 152.907 23.9349 151.172ZM21.5876 161.696C21.2046 162.614 20.463 163.322 19.4956 163.693C18.047 164.241 14.6095 164.114 13.0086 164.114C11.4077 164.114 7.96529 164.236 6.52154 163.693C5.55904 163.327 4.81752 162.619 4.42957 161.696C3.85502 160.313 3.98761 157.032 3.98761 155.504C3.98761 153.975 3.85993 150.689 4.42957 149.311C4.81261 148.393 5.55413 147.685 6.52154 147.314C7.9702 146.766 11.4077 146.893 13.0086 146.893C14.6095 146.893 18.0519 146.771 19.4956 147.314C20.4581 147.68 21.1996 148.388 21.5876 149.311C22.1621 150.694 22.0296 153.975 22.0296 155.504C22.0296 157.032 22.1621 160.318 21.5876 161.696Z" fill="#e5e7eb"/>
+                        <path class="fill-current text-gray-500 hover:text-green-300" d="M5.92446 240H1.36339V225.979H5.92446V240ZM3.64147 224.067C2.18299 224.067 1 222.914 1 221.521C1 220.853 1.2783 220.211 1.77367 219.739C2.26904 219.266 2.94091 219 3.64147 219C4.34204 219 5.0139 219.266 5.50928 219.739C6.00465 220.211 6.28295 220.853 6.28295 221.521C6.28295 222.914 5.09946 224.067 3.64147 224.067ZM22.9951 240H18.4438V233.175C18.4438 231.548 18.4095 229.462 16.0725 229.462C13.7011 229.462 13.3377 231.229 13.3377 233.057V240H8.78152V225.979H13.156V227.892H13.2198C13.8287 226.79 15.3162 225.628 17.5354 225.628C22.1514 225.628 23 228.529 23 232.298V240H22.9951Z" fill="#e5e7eb"/>
+                        <path class="fill-current text-gray-500 hover:text-green-300" d="M10.3585 307.253C10.3585 307.347 10.2565 307.422 10.1278 307.422C9.98145 307.436 9.87944 307.361 9.87944 307.253C9.87944 307.159 9.98145 307.084 10.1101 307.084C10.2431 307.07 10.3585 307.145 10.3585 307.253ZM8.97903 307.042C8.94798 307.136 9.03669 307.244 9.16976 307.272C9.28508 307.319 9.41815 307.272 9.44476 307.178C9.47137 307.084 9.3871 306.977 9.25403 306.934C9.13871 306.902 9.01008 306.948 8.97903 307.042ZM10.9395 306.963C10.8109 306.995 10.7222 307.084 10.7355 307.192C10.7488 307.286 10.8641 307.347 10.9972 307.314C11.1258 307.281 11.2145 307.192 11.2012 307.098C11.1879 307.009 11.0681 306.948 10.9395 306.963ZM13.8581 289C7.70605 289 3 293.936 3 300.438C3 305.636 6.09597 310.084 10.5181 311.65C11.0859 311.758 11.2855 311.388 11.2855 311.083C11.2855 310.792 11.2722 309.189 11.2722 308.205C11.2722 308.205 8.16734 308.908 7.51532 306.808C7.51532 306.808 7.00968 305.444 6.28226 305.092C6.28226 305.092 5.26653 304.356 6.35323 304.37C6.35323 304.37 7.45766 304.464 8.06532 305.58C9.03669 307.389 10.6645 306.869 11.2988 306.559C11.4008 305.809 11.6891 305.289 12.0085 304.98C9.52903 304.689 7.02742 304.309 7.02742 299.8C7.02742 298.511 7.36452 297.864 8.07419 297.039C7.95887 296.734 7.58185 295.478 8.18952 293.856C9.11653 293.552 11.25 295.122 11.25 295.122C12.1371 294.859 13.0907 294.723 14.0355 294.723C14.9802 294.723 15.9339 294.859 16.821 295.122C16.821 295.122 18.9544 293.547 19.8815 293.856C20.4891 295.483 20.1121 296.734 19.9968 297.039C20.7065 297.869 21.1411 298.516 21.1411 299.8C21.1411 304.323 18.5286 304.684 16.0492 304.98C16.4573 305.35 16.8032 306.053 16.8032 307.155C16.8032 308.734 16.7899 310.689 16.7899 311.073C16.7899 311.378 16.994 311.748 17.5573 311.641C21.9927 310.084 25 305.636 25 300.438C25 293.936 20.0101 289 13.8581 289ZM7.31129 305.167C7.25363 305.214 7.26694 305.322 7.34234 305.411C7.41331 305.486 7.51532 305.519 7.57298 305.458C7.63064 305.411 7.61734 305.303 7.54194 305.214C7.47097 305.139 7.36895 305.106 7.31129 305.167ZM6.83226 304.787C6.80121 304.848 6.84556 304.923 6.93427 304.97C7.00524 305.017 7.09395 305.003 7.125 304.938C7.15605 304.877 7.11169 304.802 7.02298 304.755C6.93427 304.727 6.86331 304.741 6.83226 304.787ZM8.26935 306.456C8.19839 306.517 8.225 306.658 8.32702 306.747C8.42903 306.855 8.55766 306.869 8.61532 306.794C8.67298 306.733 8.64637 306.592 8.55766 306.503C8.46008 306.395 8.32702 306.381 8.26935 306.456ZM7.76371 305.767C7.69274 305.814 7.69274 305.936 7.76371 306.044C7.83468 306.152 7.95444 306.198 8.0121 306.152C8.08306 306.091 8.08306 305.969 8.0121 305.861C7.95 305.753 7.83468 305.706 7.76371 305.767Z" fill="#e5e7eb"/>
+                        <path class="fill-current text-gray-500 hover:text-green-300" d="M15.6875 363C9.80938 363 4 366.206 4 371.395C4 374.695 6.26875 376.57 7.64375 376.57C8.21094 376.57 8.5375 375.277 8.5375 374.911C8.5375 374.475 7.17969 373.547 7.17969 371.733C7.17969 367.964 10.6859 365.292 15.2234 365.292C19.125 365.292 22.0125 367.106 22.0125 370.439C22.0125 372.928 20.7922 377.597 16.8391 377.597C15.4125 377.597 14.1922 376.753 14.1922 375.544C14.1922 373.772 15.7047 372.056 15.7047 370.228C15.7047 367.125 10.325 367.688 10.325 371.438C10.325 372.225 10.4453 373.097 10.875 373.814C10.0844 376.598 8.46875 380.747 8.46875 383.616C8.46875 384.502 8.62344 385.373 8.72656 386.259C8.92135 386.438 8.82396 386.419 9.12188 386.33C12.0094 383.095 11.9063 382.463 13.2125 378.23C13.9172 379.327 15.7391 379.917 17.1828 379.917C23.2672 379.917 26 375.066 26 370.692C26 366.038 21.0844 363 15.6875 363Z" fill="#e5e7eb"/>
+                    </svg>
+                </div>
+                <div>
+
+                    <h1 class="sm:text-2xl lg:text-4xl text-gray-200">Hi, Visitor, thank you for viewing my porftolio</h1>
+                    <h5 class="text-md lg:text-2xl text-gray-300">Web Developer / Engineer</h5>
+                    <p class="text-sm text-gray-400 mt-12 w-3/4">
+                        I am an innovative and creative Web developer / Engineer and i like to do 
+                        best what i do, i have good attitude towards work, i can also play well in a team, i will help you 
+                        design and develop your website. I also do a little of graphics design. I am currently looking and searching
+                        for recruitement.
+                    </p>
+                    <div class="sm:flex sm:flex-row mt-5 space-x-7 py-5">
+                        <button class="btn-rounded bg-green-500 shadow-lg translate-x-1  ring-offset-green-400 hover:bg-green-400 text-green-900">CONTACT ME</button>
+                        <button class="btn-rounded bg-gray-500 text-gray-300 hover:text-gray-400">Download Cv</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:space-y-7 flex flex-col justify-center items-center">
+                <img src="img/abiola.png" alt="" class="rounded-full border-2 border-green-400 w-full">
+                <div class="text-2xl text-gray-200 uppercase">Abiola Fasanya</div>
+            </div>
+        </div>
+
+        <div id="service" class="sm:block lg:py-20 lg:px-24 sm:px-14 text-gray-300 space-y-5">
+            <div class="rounded-full border-2 px-5 py-4 border-green-400">
+                <div class="flex justify-between items-center px-5 w-full  text-center">
+                    <span class="border-r-2 py-8 border-gray-400 flex space-x-10 px-3 text-sm items-center w-full">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-current text-gray-500 hover:text-green-300" fill-rule="evenodd" clip-rule="evenodd" d="M29.5455 11.1111C28.9427 11.1111 28.3646 11.4037 27.9384 11.9247C27.5122 12.4456 27.2727 13.1521 27.2727 13.8889V36.1111C27.2727 36.8478 27.5122 37.5543 27.9384 38.0753C28.3646 38.5962 28.9427 38.8889 29.5455 38.8889H38.6364C39.2391 38.8889 39.8172 38.5962 40.2434 38.0753C40.6697 37.5543 40.9091 36.8478 40.9091 36.1111V13.8889C40.9091 13.1521 40.6697 12.4456 40.2434 11.9247C39.8172 11.4037 39.2391 11.1111 38.6364 11.1111H29.5455ZM36.3636 16.6666H31.8182V33.3333H36.3636V16.6666Z" fill="#e5e7eb"/>
+                            <path class="fill-current text-gray-500 hover:text-green-300" d="M11.3636 11.1111C10.7609 11.1111 10.1828 11.4037 9.75658 11.9247C9.33036 12.4456 9.09091 13.1521 9.09091 13.8889C9.09091 14.6256 9.33036 15.3321 9.75658 15.853C10.1828 16.374 10.7609 16.6666 11.3636 16.6666H20.4545C21.0573 16.6666 21.6354 16.374 22.0616 15.853C22.4878 15.3321 22.7273 14.6256 22.7273 13.8889C22.7273 13.1521 22.4878 12.4456 22.0616 11.9247C21.6354 11.4037 21.0573 11.1111 20.4545 11.1111H11.3636Z" fill="#e5e7eb"/>
+                            <path class="fill-current text-gray-500 hover:text-green-300" d="M11.3636 22.2222C10.7609 22.2222 10.1828 22.5149 9.75658 23.0358C9.33036 23.5568 9.09091 24.2633 9.09091 25C9.09091 25.7367 9.33036 26.4433 9.75658 26.9642C10.1828 27.4851 10.7609 27.7778 11.3636 27.7778H20.4545C21.0573 27.7778 21.6354 27.4851 22.0616 26.9642C22.4878 26.4433 22.7273 25.7367 22.7273 25C22.7273 24.2633 22.4878 23.5568 22.0616 23.0358C21.6354 22.5149 21.0573 22.2222 20.4545 22.2222H11.3636Z" fill="#e5e7eb"/>
+                            <path class="fill-current text-gray-500 hover:text-green-300" d="M9.09091 36.1111C9.09091 35.3744 9.33036 34.6678 9.75658 34.1469C10.1828 33.626 10.7609 33.3333 11.3636 33.3333H20.4545C21.0573 33.3333 21.6354 33.626 22.0616 34.1469C22.4878 34.6678 22.7273 35.3744 22.7273 36.1111C22.7273 36.8478 22.4878 37.5543 22.0616 38.0753C21.6354 38.5962 21.0573 38.8889 20.4545 38.8889H11.3636C10.7609 38.8889 10.1828 38.5962 9.75658 38.0753C9.33036 37.5543 9.09091 36.8478 9.09091 36.1111Z" fill="#e5e7eb"/>
+                            <path class="fill-current text-gray-500 hover:text-green-300" fill-rule="evenodd" clip-rule="evenodd" d="M6.81818 0C5.00989 0 3.27566 0.877974 1.997 2.44078C0.718342 4.00358 0 6.1232 0 8.33333V41.6667C0 43.8768 0.718342 45.9964 1.997 47.5592C3.27566 49.122 5.00989 50 6.81818 50H43.1818C44.9901 50 46.7243 49.122 48.003 47.5592C49.2817 45.9964 50 43.8768 50 41.6667V8.33333C50 6.1232 49.2817 4.00358 48.003 2.44078C46.7243 0.877974 44.9901 0 43.1818 0H6.81818ZM43.1818 5.55556H6.81818C6.21542 5.55556 5.63734 5.84821 5.21112 6.36915C4.7849 6.89008 4.54545 7.59662 4.54545 8.33333V41.6667C4.54545 42.4034 4.7849 43.1099 5.21112 43.6309C5.63734 44.1518 6.21542 44.4444 6.81818 44.4444H43.1818C43.7846 44.4444 44.3627 44.1518 44.7889 43.6309C45.2151 43.1099 45.4545 42.4034 45.4545 41.6667V8.33333C45.4545 7.59662 45.2151 6.89008 44.7889 6.36915C44.3627 5.84821 43.7846 5.55556 43.1818 5.55556Z" fill="#e5e7eb"/>
+                        </svg>
+                        <span class="flex flex-col text-gray-400 hover:text-green-300">
+                            <span>Web Design</span>
+                            <span>3 Projects</span>
+                        </span>
+                    </span>
+                    <span class="w-full py-8 text-center flex space-x-10 px-3 text-sm items-center">
+                        <svg width="50" height="50" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-current text-gray-500 hover:text-green-300" d="M3 4H13V6H15V0.00999999L1 0V6H3V4ZM11.41 15.59L16 11L11.41 6.41L10 7.83L13.17 11L10 14.17L11.41 15.59ZM6 14.17L2.83 11L6 7.83L4.59 6.41L0 11L4.59 15.59L6 14.17ZM13 18H3V16H1V22H15V16H13V18Z" fill="black"/>
+                        </svg>
+                        <span class="flex flex-col text-gray-400 hover:text-green-300">
+                            <span>Web Development</span>
+                            <span>5 Projects</span>
+                        </span>  
+                            
+                    </span>
+                    <span class="border-l-2 py-8 border-gray-400 w-full  text-center flex space-x-10 px-3 text-sm items-center">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-current text-gray-500 hover:text-green-300" d="M13.3398 13.5539C12.359 13.8311 11.4609 14.344 10.7237 15.0478C9.9865 15.7516 9.43262 16.625 9.11031 17.592L0 44.9219L1.43456 46.3565L16.0937 31.6974C15.8017 31.086 15.6249 30.4103 15.6249 29.6876C15.6249 27.0987 17.7235 25.0001 20.3124 25.0001C22.9013 25.0001 24.9999 27.0987 24.9999 29.6876C24.9999 32.2765 22.9013 34.3751 20.3124 34.3751C19.5897 34.3751 18.914 34.1983 18.3026 33.9063L3.64354 48.5654L5.0781 50L32.408 40.8897C33.375 40.5674 34.2484 40.0135 34.9522 39.2763C35.656 38.5391 36.1689 37.641 36.4461 36.6602L40.6248 21.8751L28.1249 9.3752L13.3398 13.5539ZM48.6267 7.24337L42.7566 1.37328C40.9256 -0.457761 37.9559 -0.457761 36.1248 1.37328L30.6024 6.89572L43.1043 19.3976L48.6267 13.8752C50.4578 12.0441 50.4578 9.0754 48.6267 7.24337Z" fill="#180B49"/>
+                        </svg>
+                        <span class="flex flex-col text-gray-400 hover:text-green-300">
+                            <span>Graphics Design
+                            <span>10 Projects</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- mobile and tab -->
+    <main id="mobileHome" class="sm:block mx-auto md:block lg:hidden px-5 py-5 w-full h-full">
+        <div class="w-full space-y-4 flex flex-col justify-center items-center">
+            <img src="img/abiola.png" alt="" class="rounded-full border-2 border-green-400 w-60">
+            <div class="text-xl sm:text-2xl  text-gray-200 uppercase">Abiola Fasanya</div>
+        </div>
+        <div id="details" class="flex flex-col items-center px-1 py-3">
+            <div class="">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl text-center text-sm text-gray-200">Hi, Visitor, thank you for viewing my porftolio</h1>
+                <h5 class="text-md text-center text-gray-300">Web Developer / Engineer</h5>
+                <p class="text-sm text-justify text-gray-400 mt-12">
+                    I am an innovative and creative Web developer / Engineer and i like to do 
+                    best what i do, i have good attitude towards work, i can also play well in a team, i will help you 
+                    design and develop your website. I also do a little of graphics design. I am currently looking and searching
+                    for recruitement.
+                </p>
+                <div class="sm:flex space-y-5 sm:space-y-0 justify-center md:space-y-0 flex-col md:flex-row items-center sm:flex-row mt-5 space-x-5 py-5">
+                    <button class="btn-rounded bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50 hover:bg-green-400 text-green-900">CONTACT ME</button>
+                    <button class="btn-rounded bg-gray-500 text-gray-300 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">Download Cv</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="service" class="pt-14 text-gray-300 space-y-5">
+            <div class="rounded-lg border-2 px-5 py-4 md:py-24 border-green-400  transition delay-300 ease-in-out  duration-700">
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 items-center px-5 text-center">
+                    <span class="md:hover:bg-gray-700 md:border-green-500 md:border-2 rounded hover:border-r-2 py-8 border-gray-400 flex space-x-10 px-3 text-sm items-center w-full">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-current text-gray-500 hover:text-green-300" fill-rule="evenodd" clip-rule="evenodd" d="M29.5455 11.1111C28.9427 11.1111 28.3646 11.4037 27.9384 11.9247C27.5122 12.4456 27.2727 13.1521 27.2727 13.8889V36.1111C27.2727 36.8478 27.5122 37.5543 27.9384 38.0753C28.3646 38.5962 28.9427 38.8889 29.5455 38.8889H38.6364C39.2391 38.8889 39.8172 38.5962 40.2434 38.0753C40.6697 37.5543 40.9091 36.8478 40.9091 36.1111V13.8889C40.9091 13.1521 40.6697 12.4456 40.2434 11.9247C39.8172 11.4037 39.2391 11.1111 38.6364 11.1111H29.5455ZM36.3636 16.6666H31.8182V33.3333H36.3636V16.6666Z" fill="#e5e7eb"/>
+                            <path class="fill-current text-gray-500 hover:text-green-300" d="M11.3636 11.1111C10.7609 11.1111 10.1828 11.4037 9.75658 11.9247C9.33036 12.4456 9.09091 13.1521 9.09091 13.8889C9.09091 14.6256 9.33036 15.3321 9.75658 15.853C10.1828 16.374 10.7609 16.6666 11.3636 16.6666H20.4545C21.0573 16.6666 21.6354 16.374 22.0616 15.853C22.4878 15.3321 22.7273 14.6256 22.7273 13.8889C22.7273 13.1521 22.4878 12.4456 22.0616 11.9247C21.6354 11.4037 21.0573 11.1111 20.4545 11.1111H11.3636Z" fill="#e5e7eb"/>
+                            <path class="fill-current text-gray-500 hover:text-green-300" d="M11.3636 22.2222C10.7609 22.2222 10.1828 22.5149 9.75658 23.0358C9.33036 23.5568 9.09091 24.2633 9.09091 25C9.09091 25.7367 9.33036 26.4433 9.75658 26.9642C10.1828 27.4851 10.7609 27.7778 11.3636 27.7778H20.4545C21.0573 27.7778 21.6354 27.4851 22.0616 26.9642C22.4878 26.4433 22.7273 25.7367 22.7273 25C22.7273 24.2633 22.4878 23.5568 22.0616 23.0358C21.6354 22.5149 21.0573 22.2222 20.4545 22.2222H11.3636Z" fill="#e5e7eb"/>
+                            <path class="fill-current text-gray-500 hover:text-green-300" d="M9.09091 36.1111C9.09091 35.3744 9.33036 34.6678 9.75658 34.1469C10.1828 33.626 10.7609 33.3333 11.3636 33.3333H20.4545C21.0573 33.3333 21.6354 33.626 22.0616 34.1469C22.4878 34.6678 22.7273 35.3744 22.7273 36.1111C22.7273 36.8478 22.4878 37.5543 22.0616 38.0753C21.6354 38.5962 21.0573 38.8889 20.4545 38.8889H11.3636C10.7609 38.8889 10.1828 38.5962 9.75658 38.0753C9.33036 37.5543 9.09091 36.8478 9.09091 36.1111Z" fill="#e5e7eb"/>
+                            <path class="fill-current text-gray-500 hover:text-green-300" fill-rule="evenodd" clip-rule="evenodd" d="M6.81818 0C5.00989 0 3.27566 0.877974 1.997 2.44078C0.718342 4.00358 0 6.1232 0 8.33333V41.6667C0 43.8768 0.718342 45.9964 1.997 47.5592C3.27566 49.122 5.00989 50 6.81818 50H43.1818C44.9901 50 46.7243 49.122 48.003 47.5592C49.2817 45.9964 50 43.8768 50 41.6667V8.33333C50 6.1232 49.2817 4.00358 48.003 2.44078C46.7243 0.877974 44.9901 0 43.1818 0H6.81818ZM43.1818 5.55556H6.81818C6.21542 5.55556 5.63734 5.84821 5.21112 6.36915C4.7849 6.89008 4.54545 7.59662 4.54545 8.33333V41.6667C4.54545 42.4034 4.7849 43.1099 5.21112 43.6309C5.63734 44.1518 6.21542 44.4444 6.81818 44.4444H43.1818C43.7846 44.4444 44.3627 44.1518 44.7889 43.6309C45.2151 43.1099 45.4545 42.4034 45.4545 41.6667V8.33333C45.4545 7.59662 45.2151 6.89008 44.7889 6.36915C44.3627 5.84821 43.7846 5.55556 43.1818 5.55556Z" fill="#e5e7eb"/>
+                        </svg>
+                        <span class="flex flex-col text-gray-400 hover:text-green-300">
+                            <span>Web Design</span>
+                            <span>3 Projects</span>
+                        </span>
+                    </span>
+                    <span class="md:hover:bg-gray-700 md:border-green-500 md:border-2 rounded w-full py-8 text-center flex space-x-10 px-3 text-sm items-center">
+                        <svg width="50" height="50" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-current text-gray-500 hover:text-green-300" d="M3 4H13V6H15V0.00999999L1 0V6H3V4ZM11.41 15.59L16 11L11.41 6.41L10 7.83L13.17 11L10 14.17L11.41 15.59ZM6 14.17L2.83 11L6 7.83L4.59 6.41L0 11L4.59 15.59L6 14.17ZM13 18H3V16H1V22H15V16H13V18Z" fill="black"/>
+                        </svg>
+                        <span class="flex flex-col text-gray-400 hover:text-green-300">
+                            <span>Web Development</span>
+                            <span>5 Projects</span>
+                        </span>  
+                            
+                    </span>
+                    <span class="md:hover:bg-gray-700 md:border-green-500 md:border-2 rounded hover:border-l-2 py-8 border-gray-400 w-full  text-center flex space-x-10 px-3 text-sm items-center">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-current text-gray-500 hover:text-green-300" d="M13.3398 13.5539C12.359 13.8311 11.4609 14.344 10.7237 15.0478C9.9865 15.7516 9.43262 16.625 9.11031 17.592L0 44.9219L1.43456 46.3565L16.0937 31.6974C15.8017 31.086 15.6249 30.4103 15.6249 29.6876C15.6249 27.0987 17.7235 25.0001 20.3124 25.0001C22.9013 25.0001 24.9999 27.0987 24.9999 29.6876C24.9999 32.2765 22.9013 34.3751 20.3124 34.3751C19.5897 34.3751 18.914 34.1983 18.3026 33.9063L3.64354 48.5654L5.0781 50L32.408 40.8897C33.375 40.5674 34.2484 40.0135 34.9522 39.2763C35.656 38.5391 36.1689 37.641 36.4461 36.6602L40.6248 21.8751L28.1249 9.3752L13.3398 13.5539ZM48.6267 7.24337L42.7566 1.37328C40.9256 -0.457761 37.9559 -0.457761 36.1248 1.37328L30.6024 6.89572L43.1043 19.3976L48.6267 13.8752C50.4578 12.0441 50.4578 9.0754 48.6267 7.24337Z" fill="#180B49"/>
+                        </svg>
+                        <span class="flex flex-col text-gray-400 hover:text-green-300">
+                            <span>Graphics Design</span>
+                            <span>10 Projects</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- about area -->
+    <main id="about" class="hidden text-gray-300 px-5 lg:px-20 lg:py-24 transition delay-300 ease-in-out  duration-700">
+        <div id="personal-details">
+            <h1 class="text-2xl py-5 text-gray-500 hover:text-green-300">Personal Details</h1>
+            <div>
+                <h1 class="border-b-2 text-gray-100 text-xl border-gray-700">Name</h1>
+                <p class="py-2 cursor-pointer text-sm">Fasanya Abiola Hezekiah</p>
+            </div>
+            <div>
+                <h1 class="border-b-2 text-gray-100 text-xl border-gray-700">Email</h1>
+                <p class="py-2 cursor-pointer text-sm">
+                  <ul class="list-disc list-inside">
+                    <li>harbiola78@gmail.com</li>
+                    <li>hezekiahfasanya@gmail.com</li>
+                  </ul>
+                </p>
+            </div>
+            <div>
+                <h1 class="border-b-2 text-gray-100 text-xl border-gray-700">Phone</h1>
+                <p class="py-2 cursor-pointer text-sm">
+                <ul class="list-disc list-inside">
+                   <li>+2348102307473</li>
+                   <li>+2349077463086</li>
+                </up>
+               </p>
+            </div>
+            <div>
+                <h1 class="border-b-2 text-gray-100 text-xl border-gray-700">Location</h1>
+                <p class="py-2 cursor-pointer text-sm">Lagos, Nigeria</p>
+            </div>
+        </div>
+        <div id="Education-details">
+            <h1 class="text-2xl py-5 text-gray-500 hover:text-green-300">Education Details</h1>
+            <div>
+                <h1 class="border-b-2 text-gray-100 text-xl border-gray-700">Institution</h1>
+                <p class="py-2 cursor-pointer text-sm flex flex-col">
+                    <span>Olabisi Onabanjo University</span>    
+                    <span class="text-sm text-gray-400 italic">Electrical and Electronics Engineering</span>
+                    <span class="text-sm text-gray-500">(2013-2018)</span>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <main id="skills" class="hidden text-gray-300 px-5 lg:px-20  lg:py-60  transition delay-300 ease-in-out  duration-700">
+        <h1 class="text-2xl py-5 text-gray-500 hover:text-green-300">Skills</h1>
+        <div class="grid grid-cols-2 lg:grid-cols-5 sm:grid-col-2 items-center md:grid-cols-3 gap-5">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="Javascript" class="w-24 h-24 rounded shrink-0">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" alt="VS Code" class="w-24 h-24 rounded shrink-0">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" alt="NodeJS" class="w-24 h-24 rounded shrink-0">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png" alt="MySQL" class="w-24 h-24 rounded shrink-0">
+                <img src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" alt="Github" class="w-24 h-24 bg-gray-200 text-gray-300 rounded shrink-0">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" alt="Git" class="w-24 h-24 rounded shrink-0">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" alt="Terminal" class="w-24 h-24 rounded shrink-0">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/windows/windows.png" alt="Windows" class="w-24 h-24 rounded shrink-0">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/php.png" alt="Windows" class="w-24 h-24 rounded shrink-0">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/laravel/laravel.png" alt="Windows" class="w-24 h-24 rounded shrink-0">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" alt="Windows" class="w-24 h-24 rounded shrink-0">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png" alt="Windows" class="w-24 h-24 rounded shrink-0">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tailwind/tailwind.png" alt="Windows" class="w-24 h-24 rounded shrink-0">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="Windows" class="w-24 h-24 rounded shrink-0">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="Windows" class="w-24 h-24 rounded shrink-0">
+        </div>
+    </main>
+    
+    <!-- Project area -->
+    <main id="project" class="hidden text-gray-300 px-5 lg:px-20 lg:py-24  transition delay-300 ease-in-out  duration-700">
+        <h1 class="text-2xl py-5 text-gray-500 hover:text-green-300">Projects</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="border border-gray-500 hover:border-gray-400 py-4 px-3 rounded shadow-lg">
+                <img src="img/barter-right.png" alt="" class="shrink-0">
+                <h5 class="text-gray-300 text-xl py-2 md:text-2xl">Barter Right</h5>
+                <hr class="py-2 border-gray-700" />
+                <p class="text-gray-400">This project is a platform where people can exchange goods with each other</p>
+                <div class="flex space-x-5 pt-5">
+                    <button class="bg-green-600 hover:bg-green-500 text-100 py-2 px-3 rounded">View Demo</button>
+                    <button class="bg-gray-600 hover:bg-gray-500 text-100 py-2 px-3 rounded">GitHub</button>
+                </div>
+            </div>
+            <div class="border border-gray-500 hover:border-gray-400 py-4 px-3 rounded shadow-lg">
+                <img src="img/beemovie.png" alt="" class="shrink-0">
+                <h5 class="text-gray-300 text-xl py-2 md:text-2xl">Bee Movie</h5>
+                <hr class="py-2 border-gray-700" />
+                <p class="text-gray-400">This project displays movies information from TMDB website</p>
+                <div class="flex space-x-5 pt-5">
+                    <button class="bg-green-600 hover:bg-green-500 text-100 py-2 px-3 rounded">View Demo</button>
+                    <button class="bg-gray-600 hover:bg-gray-500 text-100 py-2 px-3 rounded">GitHub</button>
+                </div>
+            </div>
+            <div class="border border-gray-500 hover:border-gray-400 py-4 px-3 rounded shadow-lg">
+                <img src="img/books.png" alt="" class="shrink-0">
+                <h5 class="text-gray-300 text-xl py-2 md:text-2xl">Add book</h5>
+                <hr class="py-2 border-gray-700" />
+                <p class="text-gray-400">This project helps in adding and managing books</p>
+                <div class="flex space-x-5 pt-5">
+                    <button class="bg-green-600 hover:bg-green-500 text-100 py-2 px-3 rounded">View Demo</button>
+                    <button class="bg-gray-600 hover:bg-gray-500 text-100 py-2 px-3 rounded">GitHub</button>
+                </div>
+                </div>
+        </div>
+    </main>
+
+    <!--  contact area -->
+    <main id="contact" class="hidden text-gray-300 px-5 lg:px-20 lg:py-24  transition delay-300 ease-in-out  duration-700">
+        <h1 class="text-2xl py-5 md:text-center text-gray-500 hover:text-green-300">Contact</h1>
+            <form id="form" class="space-y-5 md:w-1/2 mx-auto">
+                <div class="flex flex-col">
+                    <label class="text-gray-400">Email</label>
+                    <input id="email" type="email" class="form-input px-4 py-3 rounded text-green-900" placeholder="visitor@email.com">
+                </div>
+                <div class="flex flex-col">
+                    <label class="text-gray-400">Message</label>
+                    <textarea id="message" class="form-textarea rounded text-green-900" placeholder="Message here"></textarea>
+                </div>
+                <div>
+                    <button id="btn" type="submit" class="rounded bg-green-600 hover:bg-green-500 px-4 py-3 shadow mb-3 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50">Submit</button>
+                </div>
+            </form>
+
+            <div id="social" class="flex flex-row items-center py-4 justify-center space-x-5">
+                <span>
+                    <svg class="fill-current text-gray-300 w-12 h-12" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-current text-gray-300 hover:text-green-300" d="M256 0C114.637 0 0 114.637 0 256s114.637 256 256 256 256-114.637 256-256S397.363 0 256 0zm116.887 199.602c.113 2.52.168 5.05.168 7.593 0 77.645-59.102 167.18-167.184 167.184h.004-.004c-33.184 0-64.062-9.727-90.066-26.395 4.597.543 9.277.813 14.015.813 27.532 0 52.868-9.39 72.98-25.152-25.722-.477-47.41-17.465-54.894-40.813a58.481 58.481 0 0011.043 1.063c5.363 0 10.559-.723 15.496-2.07-26.886-5.384-47.14-29.145-47.14-57.598 0-.266 0-.504.007-.75a58.354 58.354 0 0026.614 7.347c-15.778-10.527-26.149-28.523-26.149-48.91a58.597 58.597 0 017.957-29.535c28.977 35.555 72.282 58.937 121.118 61.394a58.708 58.708 0 01-1.528-13.398c0-32.437 26.317-58.754 58.766-58.754 16.902 0 32.168 7.145 42.89 18.567a117.855 117.855 0 0037.313-14.262c-4.395 13.715-13.707 25.222-25.84 32.5 11.887-1.422 23.215-4.574 33.742-9.254a119.412 119.412 0 01-29.308 30.43zm0 0"/>
+                      </svg>
+                </span>
+                <span>
+                    <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291.32 291.32">
+                        <path clas="fill-current bg-gray-300" d="M145.66 0C65.219 0 0 65.219 0 145.66c0 80.45 65.219 145.66 145.66 145.66s145.66-65.21 145.66-145.66C291.319 65.219 226.1 0 145.66 0zm40.802 256.625c-.838-11.398-1.775-25.518-1.83-31.235-.364-4.388-.838-15.549-11.434-22.677 42.068-3.523 62.087-26.774 63.526-57.499 1.202-17.497-5.754-32.883-18.107-45.3.628-13.282-.401-29.023-1.256-35.941-9.486-2.731-31.608 8.949-37.79 13.947-13.037-5.062-44.945-6.837-64.336 0-13.747-9.668-29.396-15.64-37.926-13.974-7.875 17.452-2.813 33.948-1.275 35.914-10.142 9.268-24.289 20.675-20.447 44.572 6.163 35.04 30.816 53.94 70.508 58.564-8.466 1.73-9.896 8.048-10.606 10.788-26.656 10.997-34.275-6.791-37.644-11.425-11.188-13.847-21.23-9.832-21.849-9.614-.601.218-1.056 1.092-.992 1.511.564 2.986 6.655 6.018 6.955 6.263 8.257 6.154 11.316 17.27 13.2 20.438 11.844 19.473 39.374 11.398 39.638 11.562.018 1.702-.191 16.032-.355 27.184C64.245 245.992 27.311 200.2 27.311 145.66c0-65.365 52.984-118.348 118.348-118.348S264.008 80.295 264.008 145.66c0 51.008-32.318 94.332-77.546 110.965z" fill="#ccc"/>
+                      </svg>
+                </span>
+                <span>
+                    <svg class="fill-current text-gray-300 w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 167.657 167.657">
+                        <path class="fill-current text-gray-300 hover:text-green-300" d="M83.829.349C37.532.349 0 37.881 0 84.178c0 41.523 30.222 75.911 69.848 82.57v-65.081H49.626v-23.42h20.222V60.978c0-20.037 12.238-30.956 30.115-30.956 8.562 0 15.92.638 18.056.919v20.944l-12.399.006c-9.72 0-11.594 4.618-11.594 11.397v14.947h23.193l-3.025 23.42H94.026v65.653c41.476-5.048 73.631-40.312 73.631-83.154 0-46.273-37.532-83.805-83.828-83.805z" fill="#010002"/>
+                      </svg>
+                </span>
+                <span>
+                    <svg class="fill-current text-gray-500 w-12 h-12" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-current text-gray-300 hover:text-green-300" d="M256 0C114.637 0 0 114.637 0 256s114.637 256 256 256 256-114.637 256-256S397.363 0 256 0zm-74.39 387h-62.348V199.426h62.347zm-31.173-213.188h-.406c-20.922 0-34.453-14.402-34.453-32.402 0-18.406 13.945-32.41 35.274-32.41 21.328 0 34.453 14.004 34.859 32.41 0 18-13.531 32.403-35.274 32.403zM406.423 387h-62.34V286.652c0-25.218-9.027-42.418-31.586-42.418-17.223 0-27.48 11.602-31.988 22.801-1.649 4.008-2.051 9.61-2.051 15.215V387h-62.344s.817-169.977 0-187.574h62.344v26.558c8.285-12.78 23.11-30.96 56.188-30.96 41.02 0 71.777 26.808 71.777 84.421zm0 0"/>
+                      </svg>
+                </span>
+                <span>
+                    <svg class="fill-current w-12 h-12" height="512pt" viewBox="-1 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-current text-gray-500 hover:text-green-300" d="M10.895 512A10.895 10.895 0 01.387 498.23l33.285-121.546C12.949 339.21 2.023 296.82 2.039 253.789 2.098 113.848 115.98 0 255.91 0c67.871.027 131.645 26.465 179.578 74.434 47.926 47.972 74.309 111.742 74.29 179.558-.063 139.945-113.946 253.801-253.868 253.801h-.11c-40.87-.016-81.39-9.977-117.468-28.844L13.656 511.645c-.914.238-1.843.355-2.761.355zm0 0" fill="#e5e5e5"/>
+                        <path class="fill-current text-gray-500 hover:text-green-300" d="M10.895 501.105l34.468-125.87c-21.261-36.84-32.445-78.63-32.43-121.442C12.989 119.859 121.98 10.895 255.91 10.895c64.992.027 125.996 25.324 171.871 71.238 45.871 45.914 71.125 106.945 71.102 171.855-.059 133.93-109.067 242.91-242.973 242.91-.008 0 .004 0 0 0h-.105c-40.664-.015-80.618-10.214-116.106-29.57zm134.77-77.75l7.378 4.372c31 18.398 66.543 28.128 102.789 28.148h.078c111.305 0 201.899-90.578 201.945-201.902.02-53.95-20.964-104.68-59.093-142.84-38.133-38.16-88.832-59.188-142.778-59.211C144.59 51.922 54 142.488 53.957 253.809c-.016 38.148 10.656 75.296 30.875 107.445l4.805 7.64-20.407 74.5zm0 0" fill="#fff"/>
+                        <path class="fill-current text-gray-500 hover:text-green-300" d="M19.344 492.625l33.277-121.52c-20.531-35.562-31.324-75.91-31.312-117.234.05-129.297 105.273-234.488 234.558-234.488 62.75.027 121.645 24.449 165.922 68.773 44.29 44.324 68.664 103.242 68.64 165.899-.054 129.3-105.28 234.504-234.55 234.504-.012 0 .004 0 0 0h-.106c-39.253-.016-77.828-9.868-112.085-28.54zm0 0" fill="#64b161"/>
+                        <g class="fill-current text-gray-100 hover:text-green-300">
+                          <path d="M10.895 501.105l34.468-125.87c-21.261-36.84-32.445-78.63-32.43-121.442C12.989 119.859 121.98 10.895 255.91 10.895c64.992.027 125.996 25.324 171.871 71.238 45.871 45.914 71.125 106.945 71.102 171.855-.059 133.93-109.067 242.91-242.973 242.91-.008 0 .004 0 0 0h-.105c-40.664-.015-80.618-10.214-116.106-29.57zm134.77-77.75l7.378 4.372c31 18.398 66.543 28.128 102.789 28.148h.078c111.305 0 201.899-90.578 201.945-201.902.02-53.95-20.964-104.68-59.093-142.84-38.133-38.16-88.832-59.188-142.778-59.211C144.59 51.922 54 142.488 53.957 253.809c-.016 38.148 10.656 75.296 30.875 107.445l4.805 7.64-20.407 74.5zm0 0"/>
+                          <path d="M195.184 152.246c-4.547-10.11-9.336-10.312-13.664-10.488-3.54-.153-7.59-.145-11.633-.145-4.047 0-10.625 1.524-16.188 7.598-5.566 6.074-21.254 20.762-21.254 50.633 0 29.875 21.758 58.738 24.793 62.793 3.035 4.05 42 67.308 103.707 91.644 51.285 20.227 61.72 16.203 72.852 15.192 11.133-1.012 35.918-14.688 40.976-28.864 5.063-14.175 5.063-26.324 3.543-28.867-1.52-2.527-5.566-4.047-11.636-7.082-6.07-3.035-35.918-17.726-41.485-19.75-5.566-2.027-9.613-3.035-13.66 3.043-4.05 6.07-15.676 19.742-19.219 23.79-3.543 4.058-7.086 4.566-13.156 1.527-6.07-3.043-25.625-9.45-48.82-30.133-18.047-16.09-30.235-35.965-33.777-42.043-3.54-6.07-.06-9.07 2.667-12.387 4.91-5.973 13.149-16.71 15.172-20.758 2.024-4.054 1.012-7.597-.504-10.637-1.52-3.035-13.32-33.058-18.714-45.066zm0 0" fill-rule="evenodd"/>
+                        </g>
+                      </svg>
+                </span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-gray-400 text-center mt-12 px-5 p-3 border-t-2 border-gray-700">Abiola fasanya portfolio &copy; 2021</footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
+
+    
