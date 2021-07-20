@@ -141,3 +141,36 @@ let contactD = document
     projectDesktop.classList.add("hidden");
     contact.classList.remove("hidden");
   });
+
+
+  //Project button
+  
+  const btnView1 = document.querySelector('#btnView1').addEventListener('click', () => {
+    console.log('Hello view')
+    window.location.replace("https://trade-by-barter.herokuapp.com/");
+  })
+
+  const btnGithub1 = document.querySelector('#btnGithub1').addEventListener('click', () => {
+    console.log('Hello github')
+    window.location.replace("https://github.com/fastbeetech/Trade-by-Barter-be-pjt-77");
+  })
+
+  const btnView2 = document.querySelector('#btnView2').addEventListener('click', () => {
+    console.log('Hello view')
+    window.location.replace("https://movies-livewire.herokuapp.com/");
+  })
+
+  const btnGithub2 = document.querySelector('#btnGithub2').addEventListener('click', () => {
+    console.log('Hello github')
+    window.location.replace("https://github.com/fastbeetech/livewire-movieapp");
+  })
+
+  const btnView3 = document.querySelector('#btnView3').addEventListener('click', () => {
+    console.log('Hello view')
+    window.location.replace("https://fastbeetech.github.io/react-addBook");
+  })
+
+  const btnGithub3 = document.querySelector('#btnGithub3').addEventListener('click', () => {
+    console.log('Hello github')
+    window.location.replace("https://github.com/fastbeetech/react-addBook");
+  })
