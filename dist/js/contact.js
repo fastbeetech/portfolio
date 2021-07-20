@@ -95,4 +95,3 @@ form.addEventListener("submit", (e) => {
     return;
   }
 });
-        // "X-XSRF-TOKEN": document.cookie.split("=")[1].split("%")[0],
