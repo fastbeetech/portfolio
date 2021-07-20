@@ -58,7 +58,7 @@ form.addEventListener("submit", (e) => {
       credentials: "same-origin",
       headers: {
         Accept: "application/json",
-        "X-XSRF-TOKEN": document.cookie.split("=")[1].split("%")[0],
+        // "X-XSRF-TOKEN": document.cookie.split("=")[1].split("%")[0],
       },
       body: formData,
     })
