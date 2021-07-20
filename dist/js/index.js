@@ -6,6 +6,7 @@ icon.addEventListener("click", () => {
   // console.log('icon successful passed clicked test', icon)
 
   if (menu.classList.contains("hidden")) {
+    menu.classList.add('flex');
     menu.classList.remove("hidden");
   } else {
     menu.classList.add("hidden");
