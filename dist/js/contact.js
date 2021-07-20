@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
 
   const msgAlert = document.createElement("div");
   let success = document.createTextNode(
-    "Your message has been sent, we will get back to you shortly!"
+    "Your message has been sent, thank you for your message!"
   );
   let empty = document.createTextNode("You need to fill email and message!");
 
