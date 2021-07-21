@@ -1,6 +1,8 @@
 const icon = document.getElementById("icon");
 let menu = document.getElementById("menuList");
-let contact = document.querySelector('#contact')
+let hireM = document.querySelector('#hireM');
+let hireD = document.querySelector('#hireD');
+
 
 icon.addEventListener("click", () => {
   // console.log('icon successful passed clicked test', icon)
@@ -81,16 +83,14 @@ const project = document
   });
 
 const contactM = document
-  .querySelector(".contactM")
+  .querySelector("#hireM")
   .addEventListener("click", () => {
-    //  console.log('this is project link address')
     let project = document.querySelector("#project");
-    //  console.log(works)
     let myabout = document.querySelector("#about");
     let home = document.querySelector("#mobileHome");
     let skills = document.querySelector("#skills");
 
-    if (contact) {
+    if (hireM) {
       home.classList.add("hidden");
       myabout.classList.add("hidden");
       skills.classList.add("hidden");
@@ -141,7 +141,7 @@ let projectD = document
   });
 
 let contactD = document
-  .querySelector(".contactD")
+  .querySelector("#hireD")
   .addEventListener("click", () => {
     console.log("this is desktop project");
     homeDesktop.classList.add("lg:hidden");
@@ -183,3 +183,33 @@ let contactD = document
     console.log('Hello github')
     window.location.replace("https://github.com/fastbeetech/react-addBook");
   })
+
+  // hire me handler
+//mobile
+  document.querySelector('#contactM')
+  .addEventListener("click", () => {
+    let project = document.querySelector("#project");
+    let myabout = document.querySelector("#about");
+    let home = document.querySelector("#mobileHome");
+    let skills = document.querySelector("#skills");
+
+    if (contact) {
+      home.classList.add("hidden");
+      myabout.classList.add("hidden");
+      skills.classList.add("hidden");
+      project.classList.add("hidden");
+      contact.classList.remove("hidden");
+    }
+    menu.classList.add("hidden");
+  });
+
+  //desktop
+  document.querySelector('#contactD')
+  .addEventListener("click", () => {
+    console.log("this is desktop project");
+    homeDesktop.classList.add("lg:hidden");
+    aboutDesktop.classList.add("hidden");
+    skillDesktop.classList.add("hidden");
+    projectDesktop.classList.add("hidden");
+    contact.classList.remove("hidden");
+  });

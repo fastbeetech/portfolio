@@ -29,9 +29,9 @@
                     <a href="#about" class="aboutD nav-link">About</a>
                     <a href="#skills" class="skillsD nav-link">skills</a>
                     <a href="#project" class="projectD nav-link">Projects</a>
-                    <a href="#contact" class="contactD nav-link">Contact</a>
+                    <!-- <a href="#contact" class="contactD nav-link">Contact</a> -->
                 </div>
-                <div class="btn-hire text-green-900">Hire Me</div>
+                <div id="hireD" class="btn-hire text-green-900">Hire Me</div>
             </div>
         </nav>
     </header>
@@ -55,8 +55,8 @@
                     <a href="#about" class="about nav-link hover:text-green-400">About</a>
                     <a href="#skills" class="skills nav-link hover:text-green-400">skills</a>
                     <a href="#project" class="project nav-link hover:text-green-400">Projects</a>
-                    <a href="#project" class="contactM nav-link hover:text-green-400">Contact</a>
-                    <button class="btn-hire hover:animate-none focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50 mt-3 text-green-900">Hire Me</button>
+                    <!-- <a href="#project" class="contactM nav-link hover:text-green-400">Contact</a> -->
+                    <button id="hireM" class="btn-hire hover:animate-none focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50 mt-3 text-green-900">Hire Me</button>
                 </div>
             </div>
         </nav>
@@ -64,9 +64,9 @@
     </header>
 <!-- Destop main -->
     <main id="homeDesktop" class="hidden sm:hidden md:hidden lg:block pt-28 w-full h-full">
-        <div id="details" class="sm:block space-x-10 lg:flex justify-between items-center lg:px-20 sm:px-14">
-            <div class="flex space-x-10">
-                <div sm:hidden>
+        <div id="details" class="sm:block w-full space-x-10 lg:flex justify-between items-center lg:px-20 sm:px-14">
+            <div class="flex space-x-10 w-3/5">
+                <div>
                     <svg width="26" height="387" viewBox="0 0 26 387" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="fill-current text-gray-500 hover:text-green-300"   d="M19.6172 85.5L20.5948 81.1566H14.4823V78.338C14.4823 77.1497 15.3361 75.9914 18.0738 75.9914H20.8526V72.2934C20.8526 72.2934 18.3309 72 15.9198 72C10.8859 72 7.59557 74.0803 7.59557 77.8463V81.1566H2V85.5H7.59557V96H14.4823V85.5H19.6172Z" fill="#e5e7eb"/>
                         <path class="fill-current text-gray-500 hover:text-green-300" d="M19.7386 4.85784C19.7525 5.07103 19.7525 5.28427 19.7525 5.49745C19.7525 12 15.2157 19.4924 6.92386 19.4924C4.36928 19.4924 1.9962 18.6852 0 17.2843C0.362957 17.3299 0.711906 17.3452 1.08883 17.3452C3.19666 17.3452 5.13704 16.5685 6.68654 15.2437C4.7043 15.198 3.04313 13.7817 2.47079 11.8325C2.75 11.8781 3.02917 11.9086 3.32234 11.9086C3.72715 11.9086 4.132 11.8477 4.50888 11.7411C2.4429 11.2842 0.893363 9.30455 0.893363 6.91369V6.8528C1.49359 7.21828 2.19162 7.4467 2.93141 7.47713C1.71695 6.59386 0.921293 5.08627 0.921293 3.38067C0.921293 2.46698 1.1446 1.62942 1.53549 0.898453C3.75504 3.88322 7.09135 5.83242 10.8324 6.04566C10.7626 5.68017 10.7207 5.2995 10.7207 4.91878C10.7207 2.20809 12.7309 0 15.2296 0C16.5278 0 17.7004 0.593906 18.524 1.5533C19.543 1.34011 20.5202 0.928922 21.3857 0.365484C21.0506 1.50764 20.3387 2.46703 19.4035 3.07613C20.3109 2.96958 21.1903 2.69541 21.9999 2.31473C21.3858 3.28931 20.618 4.1573 19.7386 4.85784Z" fill="#e5e7eb"/>
@@ -80,20 +80,20 @@
 
                     <h1 class="sm:text-2xl lg:text-3xl text-gray-200">Hi, Visitor, thank you for viewing my porftolio</h1>
                     <h5 class="text-md lg:text-md text-gray-400">Web Developer / Engineer</h5>
-                    <p class="text-sm text-gray-300 mt-12 w-3/4">
+                    <p class="text-sm xl:text-xl text-gray-300 mt-12 w-3/4">
                         I am an innovative and creative Web developer / Engineer and i like to do 
                         best what i do, i have good attitude towards work, i can also play well in a team, i will help you 
                         design and develop your website. I also do a little of graphics design. I am currently looking and searching
                         for recruitement.
                     </p>
                     <div class="sm:flex sm:flex-row mt-5 space-x-7 py-5">
-                        <button class="btn-rounded bg-green-500 shadow-lg translate-x-1  ring-offset-green-400 hover:bg-green-400 text-green-900">CONTACT ME</button>
+                        <button id="contactD" class="btn-rounded bg-green-500 shadow-lg translate-x-1  ring-offset-green-400 hover:bg-green-400 text-green-900">CONTACT ME</button>
                         <button class="btn-rounded bg-gray-500 text-gray-300 hover:text-gray-400">Download Cv</button>
                     </div>
                 </div>
             </div>
-            <div class="w-full lg:space-y-7 flex flex-col justify-center items-center">
-                <img src="img/abiola.png" alt="" class="rounded-full border-2 border-green-400 w-full">
+            <div class="w-2/5 lg:space-y-7 flex flex-col justify-center items-center">
+                <img src="img/abiola.png" alt="" class="rounded-full border-2 border-green-400 lg:w-full w-1/2">
                 <div class="text-2xl text-gray-200 uppercase">Abiola Fasanya</div>
             </div>
         </div>
@@ -155,7 +155,7 @@
                     for recruitement.
                 </p>
                 <div class="sm:flex space-y-5 sm:space-y-0 justify-center md:space-y-0 flex-col md:flex-row items-center sm:flex-row mt-5 space-x-5 py-5">
-                    <button class="btn-rounded bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50 hover:bg-green-400 text-green-900">CONTACT ME</button>
+                    <button id="contactM" class="btn-rounded bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50 hover:bg-green-400 text-green-900">CONTACT ME</button>
                     <button class="btn-rounded bg-gray-500 text-gray-300 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">Download Cv</button>
                 </div>
             </div>
@@ -163,9 +163,9 @@
         </div>
 
         <div id="service" class="pt-14 text-gray-300 space-y-5">
-            <div class="rounded-lg border-2 px-5 py-4 md:py-24 border-green-400  transition delay-300 ease-in-out  duration-700">
-                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 items-center px-5 text-center">
-                    <span class="md:hover:bg-gray-700 md:border-green-500 md:border-2 rounded hover:border-r-2 py-8 border-gray-400 flex space-x-10 px-3 text-sm items-center w-full">
+            <div class="px-5 py-4 md:py-24 transition delay-300 ease-in-out  duration-700">
+                <div class="grid grid-cols-1 gap-5 space-y-12 sm:grid-cols-2 md:grid-cols-3 items-center px-5 text-center">
+                    <span class="hover:bg-gray-700  border-green-500  border-2 rounded hover:border-r-2 py-20 border-gray-400 flex space-x-10 px-3 text-sm items-center w-full">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="fill-current text-gray-500 hover:text-green-300" fill-rule="evenodd" clip-rule="evenodd" d="M29.5455 11.1111C28.9427 11.1111 28.3646 11.4037 27.9384 11.9247C27.5122 12.4456 27.2727 13.1521 27.2727 13.8889V36.1111C27.2727 36.8478 27.5122 37.5543 27.9384 38.0753C28.3646 38.5962 28.9427 38.8889 29.5455 38.8889H38.6364C39.2391 38.8889 39.8172 38.5962 40.2434 38.0753C40.6697 37.5543 40.9091 36.8478 40.9091 36.1111V13.8889C40.9091 13.1521 40.6697 12.4456 40.2434 11.9247C39.8172 11.4037 39.2391 11.1111 38.6364 11.1111H29.5455ZM36.3636 16.6666H31.8182V33.3333H36.3636V16.6666Z" fill="#e5e7eb"/>
                             <path class="fill-current text-gray-500 hover:text-green-300" d="M11.3636 11.1111C10.7609 11.1111 10.1828 11.4037 9.75658 11.9247C9.33036 12.4456 9.09091 13.1521 9.09091 13.8889C9.09091 14.6256 9.33036 15.3321 9.75658 15.853C10.1828 16.374 10.7609 16.6666 11.3636 16.6666H20.4545C21.0573 16.6666 21.6354 16.374 22.0616 15.853C22.4878 15.3321 22.7273 14.6256 22.7273 13.8889C22.7273 13.1521 22.4878 12.4456 22.0616 11.9247C21.6354 11.4037 21.0573 11.1111 20.4545 11.1111H11.3636Z" fill="#e5e7eb"/>
@@ -178,7 +178,7 @@
                             <span>3 Projects</span>
                         </span>
                     </span>
-                    <span class="md:hover:bg-gray-700 md:border-green-500 md:border-2 rounded w-full py-8 text-center flex space-x-10 px-3 text-sm items-center">
+                    <span class=" hover:bg-gray-700  border-green-500  border-2 rounded w-full py-20 text-center flex space-x-10 px-3 text-sm items-center">
                         <svg width="50" height="50" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="fill-current text-gray-500 hover:text-green-300" d="M3 4H13V6H15V0.00999999L1 0V6H3V4ZM11.41 15.59L16 11L11.41 6.41L10 7.83L13.17 11L10 14.17L11.41 15.59ZM6 14.17L2.83 11L6 7.83L4.59 6.41L0 11L4.59 15.59L6 14.17ZM13 18H3V16H1V22H15V16H13V18Z" fill="black"/>
                         </svg>
@@ -188,7 +188,7 @@
                         </span>  
                             
                     </span>
-                    <span class="md:hover:bg-gray-700 md:border-green-500 md:border-2 rounded hover:border-l-2 py-8 border-gray-400 w-full  text-center flex space-x-10 px-3 text-sm items-center">
+                    <span class="hover:bg-gray-700 border-green-500  border-2 rounded hover:border-l-2 py-20 border-gray-400 w-full  text-center flex space-x-10 px-3 text-sm items-center">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="fill-current text-gray-500 hover:text-green-300" d="M13.3398 13.5539C12.359 13.8311 11.4609 14.344 10.7237 15.0478C9.9865 15.7516 9.43262 16.625 9.11031 17.592L0 44.9219L1.43456 46.3565L16.0937 31.6974C15.8017 31.086 15.6249 30.4103 15.6249 29.6876C15.6249 27.0987 17.7235 25.0001 20.3124 25.0001C22.9013 25.0001 24.9999 27.0987 24.9999 29.6876C24.9999 32.2765 22.9013 34.3751 20.3124 34.3751C19.5897 34.3751 18.914 34.1983 18.3026 33.9063L3.64354 48.5654L5.0781 50L32.408 40.8897C33.375 40.5674 34.2484 40.0135 34.9522 39.2763C35.656 38.5391 36.1689 37.641 36.4461 36.6602L40.6248 21.8751L28.1249 9.3752L13.3398 13.5539ZM48.6267 7.24337L42.7566 1.37328C40.9256 -0.457761 37.9559 -0.457761 36.1248 1.37328L30.6024 6.89572L43.1043 19.3976L48.6267 13.8752C50.4578 12.0441 50.4578 9.0754 48.6267 7.24337Z" fill="#180B49"/>
                         </svg>
@@ -245,9 +245,9 @@
         </div>
     </main>
 
-    <main id="skills" class="hidden text-gray-300 pt-32 px-5 lg:px-20  lg:py-60  transition delay-300 ease-in-out  duration-700">
+    <main id="skills" class="hidden text-gray-300 pt-32 px-5 lg:px-20 lg:pt-10 lg:py-40  transition delay-300 ease-in-out  duration-700">
         <h1 class="text-2xl py-5 text-gray-500 hover:text-green-300">Skills</h1>
-        <div class="grid grid-cols-2 lg:grid-cols-5 sm:grid-col-2 items-center md:grid-cols-3 gap-5">
+        <div class="grid grid-cols-2 lg:grid-cols-5 items-center sm:grid-col-2 items-center md:grid-cols-3 gap-5">
                 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="Javascript" class="w-24 h-24 rounded shrink-0">
                 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" alt="VS Code" class="w-24 h-24 rounded shrink-0">
                 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" alt="NodeJS" class="w-24 h-24 rounded shrink-0">
