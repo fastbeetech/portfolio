@@ -7,7 +7,7 @@ const form = document.querySelector("#form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
+  document.querySelector("#btn").classList.add('bg-green-500')
   document.querySelector("#btn")
   .innerHTML = `<span class="flex space-x-3">
                   <img src="https://img.icons8.com/color/48/000000/spinning-circle--v2.png" class="h-5 w-5"/>
@@ -49,6 +49,7 @@ form.addEventListener("submit", (e) => {
 
     email.value = "";
     message.value = "";
+    document.querySelector("#btn").classList.add('bg-green-600')
     document.querySelector("#btn").innerHTML = "Submit";
 
     return;
@@ -93,7 +94,7 @@ form.addEventListener("submit", (e) => {
         setTimeout(() => {
           msgAlert.classList.add("hidden");
         }, 6000);
-
+        document.querySelector("#btn").classList.add('bg-green-600')
         document.querySelector("#btn").innerHTML = "Submit";
         email.value = "";
         message.value = "";
