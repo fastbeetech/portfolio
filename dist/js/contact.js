@@ -1,11 +1,18 @@
 const email = document.querySelector("#email");
 const message = document.querySelector("#message");
 const contactArea = document.querySelector("#contact");
+const Btn = document.querySelector("#btn");
 
 const form = document.querySelector("#form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  document.querySelector("#btn")
+  .innerHTML = `<span class="flex space-x-3">
+                  <img src="https://img.icons8.com/color/48/000000/spinning-circle--v2.png" class="h-5 w-5"/>
+                  Sending Message
+              </span>`;
 
   const msgAlert = document.createElement("div");
   let success = document.createTextNode(
@@ -42,6 +49,8 @@ form.addEventListener("submit", (e) => {
 
     email.value = "";
     message.value = "";
+    document.querySelector("#btn").innerHTML = "Submit";
+
     return;
   } else {
     console.log([email.value, message.value]);
@@ -85,6 +94,7 @@ form.addEventListener("submit", (e) => {
           msgAlert.classList.add("hidden");
         }, 6000);
 
+        document.querySelector("#btn").innerHTML = "Submit";
         email.value = "";
         message.value = "";
       });
