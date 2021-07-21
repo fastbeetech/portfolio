@@ -8,8 +8,17 @@ icon.addEventListener("click", () => {
   if (menu.classList.contains("hidden")) {
     menu.classList.add('flex');
     menu.classList.remove("hidden");
+    icon.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    width="50" height="50"
+    viewBox="0 0 172 172"
+    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#2ecc71"><path d="M86,6.88c-43.6552,0 -79.12,35.4648 -79.12,79.12c0,43.6552 35.4648,79.12 79.12,79.12c43.6552,0 79.12,-35.4648 79.12,-79.12c0,-43.6552 -35.4648,-79.12 -79.12,-79.12zM86,13.76c39.9368,0 72.24,32.3032 72.24,72.24c0,39.9368 -32.3032,72.24 -72.24,72.24c-39.9368,0 -72.24,-32.3032 -72.24,-72.24c0,-39.9368 32.3032,-72.24 72.24,-72.24zM113.4864,54.99297c-0.90737,0.02145 -1.76951,0.4006 -2.39859,1.05485l-25.08781,25.08781l-25.08781,-25.08781c-0.64765,-0.66575 -1.53698,-1.04135 -2.46578,-1.04141c-1.39982,0.00037 -2.65984,0.84884 -3.18658,2.14577c-0.52674,1.29693 -0.21516,2.7837 0.78799,3.76001l25.08781,25.08781l-25.08781,25.08781c-0.89867,0.86281 -1.26068,2.14404 -0.94641,3.34956c0.31427,1.20552 1.2557,2.14696 2.46122,2.46122c1.20552,0.31427 2.48675,-0.04774 3.34956,-0.94641l25.08781,-25.08781l25.08781,25.08781c0.86281,0.89867 2.14404,1.26068 3.34956,0.94641c1.20552,-0.31427 2.14696,-1.2557 2.46122,-2.46122c0.31427,-1.20552 -0.04774,-2.48675 -0.94641,-3.34956l-25.08781,-25.08781l25.08781,-25.08781c1.02251,-0.98325 1.33669,-2.4933 0.79119,-3.80279c-0.5455,-1.30949 -1.83881,-2.1499 -3.25697,-2.11643z"></path></g></g></svg>
+    `
   } else {
     menu.classList.add("hidden");
+    icon.innerHTML = `
+      <svg class="fill-current bg-green-500 hover:bg-green-400 rounded w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="text-gray-800" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    `
   }
 });
 
