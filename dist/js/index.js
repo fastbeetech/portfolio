@@ -38,6 +38,10 @@ about.addEventListener("click", () => {
     project.classList.add("hidden");
     contact.classList.add("hidden");
     myabout.classList.remove("hidden");
+    menu.classList.add("hidden");
+    document.getElementById("icon").innerHTML = `
+      <svg class="fill-current bg-green-500 hover:bg-green-400 rounded w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="text-gray-800" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    `
   }
   menu.classList.add("hidden");
 });
@@ -58,6 +62,9 @@ const skills = document
       project.classList.add("hidden");
       contact.classList.add("hidden");
       skill.classList.remove("hidden");
+      document.getElementById("icon").innerHTML = `
+      <svg class="fill-current bg-green-500 hover:bg-green-400 rounded w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="text-gray-800" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    `
     }
     menu.classList.add("hidden");
   });
@@ -78,6 +85,9 @@ const project = document
       skills.classList.add("hidden");
       contact.classList.add("hidden");
       works.classList.remove("hidden");
+      document.getElementById("icon").innerHTML = `
+      <svg class="fill-current bg-green-500 hover:bg-green-400 rounded w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="text-gray-800" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    `
     }
     menu.classList.add("hidden");
   });
@@ -96,6 +106,9 @@ const contactM = document
       skills.classList.add("hidden");
       project.classList.add("hidden");
       contact.classList.remove("hidden");
+      document.getElementById("icon").innerHTML = `
+      <svg class="fill-current bg-green-500 hover:bg-green-400 rounded w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="text-gray-800" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    `
     }
     menu.classList.add("hidden");
   });
