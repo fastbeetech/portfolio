@@ -10,7 +10,7 @@ form.addEventListener("submit", (e) => {
   document.querySelector("#btn").classList.add('bg-green-500')
   document.querySelector("#btn")
   .innerHTML = `<span class="flex space-x-3">
-                  <img src="https://img.icons8.com/color/48/000000/spinning-circle--v2.png" class="h-5 w-5"/>
+                  <img src="https://img.icons8.com/color/48/000000/spinning-circle--v2.png" class="h-5 w-5 animate-spin"/>
                   Sending Message
               </span>`;
 
