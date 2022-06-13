@@ -3,18 +3,22 @@ import Container from "./Container";
 
 const Home = (props) => {
   return (
-    <div className="w-full bg-zinc-100">
+    <div className="w-full h-[90vh] bg-zinc-100">
       <Container className="container mx-auto sm:px-5 lg:px-14 py-3">
-        <div className="flex lg:flex-row  sm:flex-col-reverse sm:justify-center items-center sm:space-y-5 lg:space-x-5">
+        <div className="flex lg:flex-row  sm:flex-col-reverse lg:mt-[2.5rem] justify-center items-center sm:space-y-5 lg:space-x-5">
           <div>
-            <h1 className="text-4xl mb-12">Hello Viewer</h1>
-            <p className="text-base">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque non
-              aspernatur unde aut pariatur id amet consequuntur! Dolores, nihil
-              quibusdam!
+            <h1 className="lg:text-6xl lg:my-[1.5rem] font-bold text-4xl mb-12 w-[75%]">
+              Hello,
+              <br /> I am Abiola Fasanya
+            </h1>
+            <p className="text-base font-medium text-[18px]">
+              I am a web developer and i can build nice and scalable web
+              applications with a variety of technologies. I have a passion for
+              building web applications and i am always looking to learn new
+              technologies.
             </p>
             <button className="mt-12 rounded-full py-2 px-5 bg-orange-500 hover:bg-orange-600">
-              Contact ME
+              More about me
             </button>
           </div>
           <div className="pt-5">
