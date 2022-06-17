@@ -34,7 +34,7 @@ const Projects = [
     },
     {
         id: 5,
-        title: 'Trade By Barter',
+        title: 'Movie Listing with TMDB API',
         description: 'A movie app created with livewire, tailwindCss and Alpine Js to understand how livewire works in Laravel',
         image: 'http://res.cloudinary.com/fastbeetech/image/upload/v1655455013/eucpzpansg1gusacakez.png',
         link: 'https://movies-livewire.herokuapp.com/',

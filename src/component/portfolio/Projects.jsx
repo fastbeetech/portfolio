@@ -24,7 +24,7 @@ const Project = (props) => {
                     className="w-full h-auto"
                   />
                   <div className="bg-gray-300 p-2 rounded-b-md">
-                    <h3 className="text-center">{project.title}</h3>
+                    <h3 className="text-lg font-bold text-orange-500 text-center">{project.title}</h3>
                     <p className="text-center">{project.description}</p>
                     <div className="flex  items-center space-x-8 my-2 justify-center">
                       <a
