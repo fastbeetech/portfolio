@@ -18,8 +18,10 @@ const Project = (props) => {
                                 <h3 className="text-center">{project.title}</h3>
                                 <p className="text-center">{project.description}</p>
                                 <div className="flex  items-center space-x-8 my-2 justify-center">
-                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white rounded py-2 px-5">Visit</a>
-                                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="bg-zinc-500 hover:bg-zinc-600 text-dark rounded py-2 px-5">Github</a>
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer" 
+                                    className="bg-orange-500 hover:bg-orange-600 rounded py-2 px-5">Visit</a>
+                                    <a href={project.github} target="_blank" rel="noopener noreferrer" 
+                                    className="bg-zinc-500 hover:bg-zinc-600 text-dark rounded py-2 px-5">Github</a>
                                 </div>
                                 </div>
                             </div>

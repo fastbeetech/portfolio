@@ -10,8 +10,13 @@ const Contact = (props) => {
         <div className="flex">
           <div className="w-full">
             <div className="grid lg:grid-cols-2 gap-8 sm:grid-cols-1 items-center">
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/fastbeetech/image/upload/v1655458144/jqmj589tqrdgiy57pc1j.jpg"
+                alt="contact"
+                className="w-full h-auto"
+              /> */}
+              <img
+                src="http://res.cloudinary.com/fastbeetech/image/upload/v1655461507/l9loumi6chnaht1kjurk.gif"
                 alt="contact"
                 className="w-full h-auto"
               />
@@ -26,7 +31,7 @@ const Contact = (props) => {
                     href="mailto:harbiola78@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-blue-500 hover:bg-blue-600 text-white rounded py-2 px-5"
+                    className="bg-orange-500 hover:bg-orange-600 rounded py-2 px-5"
                   >
                     Email
                   </a>
@@ -69,7 +74,7 @@ const Contact = (props) => {
                     </div>
                     <div>
                       <button
-                        className="bg-blue-500 hover:bg-blue-600 text-white rounded py-2 px-5"
+                        className="bg-orange-500 hover:bg-orange-600 rounded py-2 px-5"
                         type="submit"
                       >
                         Send

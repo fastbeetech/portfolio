@@ -7,7 +7,7 @@ const SideBar = (props) => {
   return (
     <div className={props.className + " h-screen bg-zinc-500"}>
       <Container>
-        <header className="my-3 text-center">Harbiola</header>
+        <header className="mb-3 text-center text-2xl text-orange-500 font-bold uppercase bg-black">Harbiola</header>
         <nav>
           <ul className="flex flex-col">
             {Sidebar.menu.map((item, index) => {
