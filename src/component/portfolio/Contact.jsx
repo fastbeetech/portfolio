@@ -4,12 +4,12 @@ import React from "react";
 const Contact = (props) => {
   return (
     <div className="w-full bg-zinc-100">
-      <Container className="container sm:px-5 lg:px-14 py-3">
+      <Container className="container mx-auto w-full sm:px-5 lg:px-14 py-3">
         <h2 className="text-2xl font-bold">Contact</h2>
         {/* contact page */}
         <div className="flex">
           <div className="w-full">
-            <div className="grid lg:grid-cols-2 gap-8 sm:grid-cols-1 items-center">
+            <div className="grid lg:grid-cols-2 lg:gap-8 sm:gap-y-8 sm:grid-cols-1 items-center">
               {/* <img
                 src="https://res.cloudinary.com/fastbeetech/image/upload/v1655458144/jqmj589tqrdgiy57pc1j.jpg"
                 alt="contact"
