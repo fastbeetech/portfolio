@@ -10,9 +10,9 @@ const SideBar = (props) => {
   return (
     <div className={`${props.className} ${close ?  'hidden': ''} lg:w-[200px] sm:w-[40%] lg:h-screen lg:static sm:fixed sm:top-[45px] bg-zinc-700`}>
       <Container className="container ">
-        <header className="flex items-center justify-between cursor-pointer mb-3 px-2 text-center text-2xl text-orange-500 font-bold uppercase bg-black">
+        <header className="flex items-center lg:py-1 sm:py-2 justify-between cursor-pointer mb-3 px-2 text-center lg:text-2xl sm:text-lg text-orange-500 font-bold uppercase bg-black">
           Harbiola
-          <AiOutlineClose  className="ml-2 text-red-500 hover:text-red-600"  
+          <AiOutlineClose  className="ml-2 text-red-500 hover:text-red-600 sm:text-2xl"  
           onClick={() => setClose(!close)}
           />
           </header>
