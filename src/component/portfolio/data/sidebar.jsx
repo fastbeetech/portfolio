@@ -2,7 +2,7 @@ class Sidebar {
   static menu = [
     { link: "/", label: "Home" },
     { link: "/about", label: "About" },
-    { link: "/project", label: "Project" },
+    { link: "/projects", label: "Projects" },
     { link: "/contact", label: "Contact" },
   ];
 }

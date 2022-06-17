@@ -2,7 +2,7 @@ import React from "react";
 import Home from "../Home"
 import About from "../About"
 import Contact from "../Contact"
-import Project from "../Project"
+import Project from "../Projects"
 
 const Routes = [
   {
@@ -16,6 +16,7 @@ const Routes = [
     main: () => <About />,
   },
   {
+    exact: true,
     path: "/projects",
     main: () => <Project />,
   },

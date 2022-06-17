@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiMenuAlt1 } from "react-icons/hi";
 import Container from "./Container";
+import { FaDownload } from "react-icons/fa";
 
 const Header = ({ showSidebar }) => {
   function toggleSidebar() {
@@ -20,9 +21,12 @@ const Header = ({ showSidebar }) => {
           <h1 className="text-white text-2xl">Abiola Fasanya</h1>
         </div>
         <div>
-          <button className="sm:hidden lg:flex bg-orange-500 hover:bg-orange-600 text-white rounded-full px-7 py-2">
-            Download CV
-          </button>
+          <a href="https://drive.google.com/file/d/1iQd7itDgFfLY0NXi35mfDV-5ZfiHeQmD/view?usp=sharing">
+            <button className="inline-flex rounded-full py-2 px-7 bg-orange-500 hover:bg-orange-600">
+              <FaDownload />
+              <span className="ml-2">Download CV</span>
+            </button>
+          </a>
         </div>
       </Container>
     </div>
