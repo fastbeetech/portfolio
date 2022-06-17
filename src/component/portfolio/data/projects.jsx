@@ -32,6 +32,14 @@ const Projects = [
         link: 'https://trade-by-barter.herokuapp.com/',
         github: 'https://github.com/fastbeetech/Trade-by-Barter-be-pjt-77'
     },
+    {
+        id: 5,
+        title: 'Trade By Barter',
+        description: 'A movie app created with livewire, tailwindCss and Alpine Js to understand how livewire works and to master blade concept of laravel',
+        image: 'http://res.cloudinary.com/fastbeetech/image/upload/v1655455013/eucpzpansg1gusacakez.png',
+        link: 'https://movies-livewire.herokuapp.com/',
+        github: 'https://github.com/fastbeetech/livewire-movieapp'
+    },
 
 ]
 

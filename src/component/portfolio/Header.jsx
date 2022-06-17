@@ -20,7 +20,7 @@ const Header = ({ showSidebar }) => {
           />
           <h1 className="text-white text-2xl">Abiola Fasanya</h1>
         </div>
-        <div>
+        <div className="sm:hidden lg:flex">
           <a href="https://drive.google.com/file/d/1iQd7itDgFfLY0NXi35mfDV-5ZfiHeQmD/view?usp=sharing">
             <button className="inline-flex rounded-full py-2 px-7 bg-orange-500 hover:bg-orange-600">
               <FaDownload />
