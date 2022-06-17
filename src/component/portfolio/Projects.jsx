@@ -6,7 +6,7 @@ const Project = (props) => {
   return (
     <div className="w-full bg-zinc-100">
       <Container className="container mx-auto sm:px-5 lg:py-[2rem] lg:px-[3.5rem] py-3">
-        <h2>Projects</h2>
+        <h2 className="text-2xl font-bold">Projects</h2>
         <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-4">
             {
                 projects.map(project => {
