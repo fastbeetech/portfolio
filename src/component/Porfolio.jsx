@@ -3,32 +3,23 @@ import Container from "../component/portfolio/Container";
 import Header from "../component/portfolio/Header";
 import SideBar from "../component/portfolio/SideBar";
 import routes from "./portfolio/data/Routes";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Footer from "./portfolio/Footer";
+import AnimatedUrl from "./portfolio/AnimatedUrl";
 
 const Portfolio = () => {
   const showSidebar = (val) => {
-    console.log(val)
+    console.log(val);
     setOpenSidebar(val);
-  }
+  };
   const [openSidebar, setOpenSidebar] = useState();
   return (
     <Router>
       <div className="portfolio">
-        <Header showSidebar={showSidebar}/>
+        <Header showSidebar={showSidebar} />
         <Container className="flex">
-          {openSidebar ? <SideBar className=""/> : null}
-          {/* <SideBar className="w-[200px]" active={showSidebar}/> */}
-          <Routes>
-            {routes.map((route, index) => (
-              <Route
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                element={<route.main />}
-              />
-            ))}
-          </Routes>
+          {openSidebar ? <SideBar className="" /> : null}
+          <AnimatedUrl routes={routes} />
         </Container>
         <Footer />
       </div>

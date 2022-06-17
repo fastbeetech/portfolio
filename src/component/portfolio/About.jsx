@@ -1,19 +1,25 @@
 import React from "react";
 import Container from "./Container";
 import { FaDownload } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const About = (props) => {
   return (
-    <div className="w-full bg-zinc-100">
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
+      className="w-full bg-zinc-100"
+    >
       <Container className="container my-10 sm:px-5 lg:px-14 py-3">
         <div className="my-3 space-y-5">
           <h2 className="text-2xl font-bold">About Me</h2>
           <p className="">
-            I am Abiola Fasanya, from Lagos, Nigeria.
-            I have 3 years of experience in web development. I design and development 
-            user interfaces, testing, debugging and maintaining web applications.
-            Proven ability to work with a team to deliver a product that is intended to be
-            useful and easy to use.
+            I am Abiola Fasanya, from Lagos, Nigeria. I have 3 years of
+            experience in web development. I design and development user
+            interfaces, testing, debugging and maintaining web applications.
+            Proven ability to work with a team to deliver a product that is
+            intended to be useful and easy to use.
           </p>
         </div>
 
@@ -42,7 +48,7 @@ const About = (props) => {
           </div>
         </div>
       </Container>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,9 +1,15 @@
 import React from "react";
 import Container from "./Container";
+import { motion } from "framer-motion";
 
 const Home = (props) => {
   return (
-    <div className="w-full lg:h-[90vh] sm:h-auto bg-zinc-100">
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
+      className="w-full lg:h-[90vh] sm:h-auto bg-zinc-100"
+    >
       <Container className="container mx-auto sm:px-5 lg:mb-1 sm:mb-7 lg:py-[2rem] lg:px-[3.5rem] py-3">
         <div className="flex lg:flex-row  sm:flex-col-reverse lg:mt-[2.5rem] justify-center items-center sm:space-y-5 lg:space-x-5">
           <div className="">
@@ -30,7 +36,7 @@ const Home = (props) => {
           </div>
         </div>
       </Container>
-    </div>
+    </motion.div>
   );
 };
 

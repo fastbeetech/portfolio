@@ -1,9 +1,19 @@
 import Container from "./Container";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Contact = (props) => {
+  function submitForm(e) {
+    e.preventDefault();
+    console.log("submitted");
+  }
   return (
-    <div className="w-full bg-zinc-100">
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
+      className="w-full bg-zinc-100"
+    >
       <Container className="container mx-auto w-full sm:px-5 lg:px-14 py-3">
         <h2 className="text-2xl font-bold">Contact</h2>
         {/* contact page */}
@@ -47,7 +57,7 @@ const Contact = (props) => {
                 </div>
 
                 <div className="flex  items-center space-x-8 my-2 justify-center">
-                  <form action="" method="post">
+                  <form action="" method="post" onSubmit={submitForm}>
                     <div>
                       <label htmlFor="name">Name</label>
                       <input
@@ -87,7 +97,7 @@ const Contact = (props) => {
           </div>
         </div>
       </Container>
-    </div>
+    </motion.div>
   );
 };
 
