@@ -4,8 +4,8 @@ import socials from "./data/social";
 
 const Footer = () => {
   return (
-    <div className=" bg-black py-3">
-      <Container className="flex items-center justify-between py-2 px-5 w-full">
+    <div className=" bg-black">
+      <Container className="flex items-center justify-between py-3 px-5 w-full">
         <div className="grid lg:grid-cols-5 sm:grid-cols-2 items-center w-full place-items-center">
           {socials.map((social, index) => (
             <div key={index} className="">
@@ -22,7 +22,9 @@ const Footer = () => {
           ))}
         </div>
       </Container>
-        <p className="text-center text-zinc-400">Made by: Abiola Fasanya - {new Date().getFullYear()}</p>
+      <div className="bg-zinc-900 text-zinc-400">
+        <p className="text-center py-2 px-5">Made by: Abiola Fasanya - {new Date().getFullYear()}</p>
+      </div>
     </div>
   );
 };

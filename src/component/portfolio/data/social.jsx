@@ -10,13 +10,13 @@ const Social = [
   },
   {
     name: "Twitter",
-    url: "https://twitter.com/abiola_fasanya",
+    url: "https://twitter.com/harbiola78",
     icon: BsTwitter,
   },
   { name: "Github", url: "https://github.com/fastbeetech", icon: BsGithub },
   {
     name: "Linkedin",
-    url: "https://www.linkedin.com/in/abiola-fasanya-b9a8b917b/",
+    url: "https://ng.linkedin.com/in/abiola-fasanya-66a095129",
     icon: BsLinkedin,
   },
   {
