@@ -4,6 +4,7 @@ import Header from "../component/portfolio/Header";
 import SideBar from "../component/portfolio/SideBar";
 import routes from "./portfolio/data/Routes";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Footer from "./portfolio/Footer";
 
 const Portfolio = () => {
   const showSidebar = (val) => {
@@ -16,7 +17,7 @@ const Portfolio = () => {
       <div className="portfolio">
         <Header showSidebar={showSidebar}/>
         <Container className="flex">
-          {openSidebar ? <SideBar className="w-[200px]"/> : null}
+          {openSidebar ? <SideBar className=""/> : null}
           {/* <SideBar className="w-[200px]" active={showSidebar}/> */}
           <Routes>
             {routes.map((route, index) => (
@@ -29,6 +30,7 @@ const Portfolio = () => {
             ))}
           </Routes>
         </Container>
+        <Footer />
       </div>
     </Router>
   );
