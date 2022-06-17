@@ -14,7 +14,7 @@ const Contact = (props) => {
       exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
       className="w-full bg-zinc-100"
     >
-      <Container className="container mx-auto w-full sm:px-5 lg:px-14 py-3">
+      <Container className=" mx-auto w-full sm:px-5 lg:px-14 py-3">
         <h2 className="text-2xl font-bold">Contact</h2>
         {/* contact page */}
         <div className="flex">
