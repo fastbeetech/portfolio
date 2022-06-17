@@ -3,8 +3,8 @@ import Container from "./Container";
 
 const Home = (props) => {
   return (
-    <div className="w-full h-[90vh] bg-zinc-100">
-      <Container className="container mx-auto sm:px-5 lg:py-[2rem] lg:px-[3.5rem] py-3">
+    <div className="w-full lg:h-[90vh] sm:h-auto bg-zinc-100">
+      <Container className="container mx-auto sm:px-5 lg:mb-1 sm:mb-7 lg:py-[2rem] lg:px-[3.5rem] py-3">
         <div className="flex lg:flex-row  sm:flex-col-reverse lg:mt-[2.5rem] justify-center items-center sm:space-y-5 lg:space-x-5">
           <div className="">
             <h1 className="lg:text-6xl lg:my-[1.5rem] font-bold text-4xl mb-12 w-[75%]">
