@@ -10,9 +10,9 @@ const SideBar = (props) => {
     <div
       className={`${props.className} ${
         close ? "hidden" : ""
-      } lg:w-[200px] sm:w-[100%] lg:h-screen lg:static sm:fixed sm:top-0 bg-zinc-700`}
+      } lg:w-[200px] sm:w-[100%] lg:h-screen lg:static sm:fixed sm:top-0 bg-zinc-800`}
     >
-      <Container className="">
+      <Container className="bg-zinc-800">
         <header className="mx-auto bg-black flex items-center lg:py-1 sm:py-2 justify-between cursor-pointer mb-3 lg:px-2 sm:px-5 text-center lg:text-2xl sm:text-lg text-zinc-400 font-bold uppercase">
           Harbiola
           <AiOutlineClose
@@ -20,8 +20,8 @@ const SideBar = (props) => {
             onClick={() => setClose(!close)}
           />
         </header>
-        <nav>
-          <ul className="flex flex-col sm:text-center">
+        <nav className="bg-zinc-800">
+          <ul className="flex flex-col sm:text-center bg-zinc-800">
             {Sidebar.menu.map((item, index) => {
               return (
                 <NavLink
@@ -30,7 +30,7 @@ const SideBar = (props) => {
                   className={({ isActive }) =>
                     isActive
                       ? "text-orange-600 block bg-black px-3 py-2 my-2"
-                      : "px-3 py-2 bg-inherit bg-zinc-800 text-zinc-400 my-2"
+                      : "px-3 py-2 bg-inherit text-zinc-400 my-2"
                   }
                 >
                   {item.label}
