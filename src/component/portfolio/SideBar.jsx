@@ -30,7 +30,7 @@ const SideBar = (props) => {
                   className={({ isActive }) =>
                     isActive
                       ? "text-orange-600 block bg-black px-3 py-2 my-2"
-                      : "px-3 py-2 bg-inherit text-zinc-400 my-2"
+                      : "px-3 py-2 bg-inherit bg-zinc-800 text-zinc-400 my-2"
                   }
                 >
                   {item.label}
