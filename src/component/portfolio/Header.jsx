@@ -13,10 +13,10 @@ const Header = ({ showSidebar }) => {
   return (
     <div className="">
       <Container className="container mx-auto flex items-center justify-between py-2 px-5">
-        <div className="flex items-center sm:justify-between cursor-pointer">
+        <div className="flex items-center sm:justify-between">
           <HiMenuAlt1
             onClick={toggleSidebar}
-            className={`lg:mx-2 sm:mr-[80px] text-white text-2xl`}
+            className={`mx-2 text-white text-2xl`}
           />
           <h1 className="text-white text-2xl">Abiola Fasanya</h1>
         </div>
