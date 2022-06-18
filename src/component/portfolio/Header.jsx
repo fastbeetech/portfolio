@@ -12,7 +12,7 @@ const Header = ({ showSidebar }) => {
   const [active, setActive] = useState(true);
   return (
     <div className="">
-      <Container className="container mx-auto flex items-center justify-between py-2 px-5">
+      <Container className="container mx-auto flex items-center lg:justify-between sm:justify-center py-2 px-5">
         <div className="flex items-center sm:justify-between">
           <HiMenuAlt1
             onClick={toggleSidebar}
