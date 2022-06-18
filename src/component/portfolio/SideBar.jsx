@@ -24,7 +24,6 @@ const SideBar = (props) => {
           <ul className="flex flex-col sm:text-center">
             {Sidebar.menu.map((item, index) => {
               return (
-                // <li key={index} className="my-2 w-full">
                 <NavLink
                   key={index}
                   to={item.link}
@@ -36,7 +35,6 @@ const SideBar = (props) => {
                 >
                   {item.label}
                 </NavLink>
-                // </li>
               );
             })}
           </ul>
