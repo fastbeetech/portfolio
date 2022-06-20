@@ -11,7 +11,7 @@ const About = (props) => {
           <h2 className="text-2xl font-bold">About Me</h2>
           <p className="">
             I am Abiola Fasanya, from Lagos, Nigeria. I have 3 years of
-            experience in web development. I design and development user
+            experience in web development. I design and develop user
             interfaces, testing, debugging and maintaining web applications.
             Proven ability to work with a team to deliver a product that is
             intended to be useful and easy to use.
