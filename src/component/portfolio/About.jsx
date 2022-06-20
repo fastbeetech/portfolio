@@ -5,12 +5,7 @@ import { motion } from "framer-motion";
 
 const About = (props) => {
   return (
-    <motion.div
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
-      className="w-full bg-zinc-100"
-    >
+    <motion.div className="w-full bg-zinc-100">
       <Container className="lg:h-[60vh] sm:h-auto container my-10 sm:px-5 lg:px-14 py-3">
         <div className="my-3 space-y-5">
           <h2 className="text-2xl font-bold">About Me</h2>
